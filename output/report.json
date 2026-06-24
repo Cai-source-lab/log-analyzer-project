@@ -1,0 +1,23 @@
+{
+    "level_stats": {
+        "INFO": 1251,
+        "WARN": 0,
+        "ERROR": 449
+    },
+    "endpoint_stats": {
+        "N/A": {
+            "count": 2017,
+            "error": 766
+        }
+    },
+    "module_stats": {
+        "other": 2017
+    },
+    "keyword_stats": {
+        "timeout": 0,
+        "failed": 330,
+        "connection": 330,
+        "refused": 0
+    },
+    "root_cause": "other"
+}

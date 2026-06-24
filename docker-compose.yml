@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  log-analyzer:
+    build: .
+    container_name: log-analyzer-system
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
