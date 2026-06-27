@@ -36,26 +36,15 @@ dict 数据统计分析
 
 
 📁 项目结构
-log-analyzer-project/
-│
-├── src/
-│   ├── main.py              # 程序入口
-│   ├── parser.py           # 日志解析模块
-│   ├── analyzer.py         # 批处理分析模块
-│
-├── realtime/
-│   └── stream_monitor.py   # 实时监控模块
-│
-├── logs/
-│   ├── app.py              # 模拟日志生成服务
-│   └── logs/app.log        # 日志文件
-│
-├── output/
-│   └── report.json         # 分析结果输出
-│
-├── Dockerfile
-├── docker-compose.yml
-└── README.md
+src 目录包含主程序入口 main.py、日志解析模块 parser.py、批处理分析模块 analyzer.py
+
+realtime 目录包含实时监控模块 stream_monitor.py
+
+logs 目录包含日志生成服务 app.py，以及日志文件 logs/app.log
+
+output 目录用于存放分析结果 report.json
+
+根目录包含 Dockerfile 和 docker-compose.yml，用于容器化部署与环境编排
 
 
 🔍 功能说明
