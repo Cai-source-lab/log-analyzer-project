@@ -13,24 +13,18 @@ Docker 一键部署
 
 
 
-日志生成模块（Log Generator / app.py）
-            │
-            ▼
-        app.log（日志数据源）
-            │
-            ├──────────────────────────────┐
-            │                              │
-            ▼                              ▼
- 批处理分析模块（Batch Analyzer）     实时监控模块（Stream Monitor）
-        analyzer.py                    stream_monitor.py
-            │                              │
-            └──────────────┬──────────────┘
-                           ▼
-                 report.json（分析结果输出）
-                           │
-                           ▼
-                    可视化/告警展示层
+🧱 系统架构
 
+日志生成模块（Log Generator / app.py）
+
+日志数据源（app.log）
+
+批处理分析模块（Batch Analyzer / analyzer.py）
+实时监控模块（Stream Monitor / stream_monitor.py）
+
+分析结果输出（report.json）
+
+可视化 / 告警展示层
 
 ⚙️ 技术栈
 Python 3
