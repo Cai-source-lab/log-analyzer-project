@@ -13,20 +13,23 @@ Docker 一键部署
 
 
 
-🧱 系统架构
-日志生成器（app.py）
-        │
-        ▼
-app.log（日志文件）
-        │
-        ├── 批处理分析（analyzer）
-        │        └── analyzer.py
-        │
-        └── 实时监控（stream模式）
-                 └── stream_monitor.py
-        │
-        ▼
-report.json（分析结果）
+日志生成模块（Log Generator / app.py）
+            │
+            ▼
+        app.log（日志数据源）
+            │
+            ├──────────────────────────────┐
+            │                              │
+            ▼                              ▼
+ 批处理分析模块（Batch Analyzer）     实时监控模块（Stream Monitor）
+        analyzer.py                    stream_monitor.py
+            │                              │
+            └──────────────┬──────────────┘
+                           ▼
+                 report.json（分析结果输出）
+                           │
+                           ▼
+                    可视化/告警展示层
 
 
 ⚙️ 技术栈
